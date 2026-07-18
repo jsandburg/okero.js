@@ -6,7 +6,7 @@ Frog sprite art is from [pop-shop-packs.itch.io](https://pop-shop-packs.itch.io)
 ## Usage
 
 ```html
-<script src="/js/okero.js" data-kero="/images/okero.png"></script>
+<script src="okero.js" data-kero="okero.png"></script>
 ```
 
 Place the `<script>` tag anywhere in your HTML (typically before `</body>`). The frog renders as a fixed-position element on top of all page content.
