@@ -1,7 +1,7 @@
 # okero.js
 
 A frog that follows the cursor, based on [oneko.js](https://github.com/adryd325/oneko.js) (MIT) and the [classic Neko cat](https://en.wikipedia.org/wiki/Neko_(software)). 
-Frog sprite art is from [pop-shop-packs.itch.io](https://pop-shop-packs.itch.io).
+Frog sprite art (okero.png) is from [pop-shop-packs.itch.io](https://pop-shop-packs.itch.io/frogs-pixel-asset-pack).
 
 ## Usage
 
@@ -43,4 +43,4 @@ The script only uses the sprite art from columns 2 and 3.
 | 2 | 0 | Sleeping frame 1 |
 | 2 | 1 | Sleeping frame 2 |
 
-The frog sprite naturally faces to the left. The script flips it with `scaleX(-1)` when moving right.
+The frog sprite naturally faces to the left. The script flips it with `scaleX(-1)` when moving right. Depending upon which sprite sheet you use, this may not be necessary.
