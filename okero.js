@@ -133,8 +133,15 @@
     }
 
     if (persistPosition) {
-      const storedKero = JSON.parse(window.localStorage.getItem("kero"));
-      if (storedKero !== null) {
+    // A corrupt or inaccessible localStorage value must not stop the
+    // cursor from appearing — fall back to the default start position.
+    let storedKero = null;
+    try {
+        storedKero = JSON.parse(window.localStorage.getItem("kero"));
+    } catch (e) {
+        storedKero = null;
+    }
+    if (storedKero && typeof storedKero === "object") {
         keroPosX = storedKero.keroPosX;
         keroPosY = storedKero.keroPosY;
         mousePosX = storedKero.mousePosX;
